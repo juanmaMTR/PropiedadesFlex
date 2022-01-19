@@ -1,0 +1,80 @@
+/**
+*   style.css
+*   Aplica css al index.html de la rama principal
+*   @autor Juan Manuel Toscano Reyes <jtoscanoreyes.guadalupe@alumnado.fundacionloyola.net>
+**/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: lightskyblue;
+}
+nav{
+    width: 100%;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+main div div div{
+    background-color: lime;
+    padding: 2%;
+}
+h2{
+    margin-top: 3%;
+}
+.contenedor{
+    display: flex;
+}
+.flex-grow{
+    width: 10%;
+    flex-grow: 1;
+}
+.flex-shrink{
+    width: 30%;
+    flex-shrink: 1;
+}
+.order{
+    order: 1; /*Lo coloca al final porque los demás por defecto tienen order 0*/
+}
+.flex-direction{
+    display: flex;
+    flex-direction: column;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-flow{
+    display: flex;
+    flex-flow: column wrap;
+}
+.justify-content div{
+    width: 20%;
+}
+.justify-content{
+    display: flex;
+    justify-content: space-between; /*Con esta propiedad deja el mismo espacio entre las cajas*/
+}
+.align-self{
+    align-self: flex-end;
+}
+.align-items{
+    display: flex;
+    align-items: center;
+}
+.align-content div{
+    width: 50%;
+}
+.align-content{
+    display: flex;
+    align-content: space-between;
+}
+.gap{
+    display: flex;
+    gap: 10px;
+}

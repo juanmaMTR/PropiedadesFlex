@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="<jtoscanoreyes.guadalupe@alumnado.fundacionloyola.net>">
+            <link rel="stylesheet" href="css/style.css">
+        <title>Propiedades del Flex</title>
+    </head>
+    <body>
+        <header>
+            <h1>Propiedades del Flex</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#flex-grow">Flex-Grow</a></li>
+                <li><a href="#flex-shrink">Flex-Shrink</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#flex-direction">Flex-Direction</a></li>
+                <li><a href="#flex-wrap">Flex-Wrap</a></li>
+                <li><a href="#flex-flow">Flex-Flow</a></li>
+                <li><a href="#justify-content">Justify-Content</a></li>
+                <li><a href="#align-self">Align-Self</a></li>
+                <li><a href="#align-items">Align-Items</a></li>
+                <li><a href="#align-content">Align-Content</a></li>
+                <li><a href="#gap">Gap</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <!--Para que de el mismo espacio a las cajas cuando no ocupan el contenedor entero-->
+                <h2><a name="flex-grow">Flex-Grow</a></h2>
+                <div class="contenedor">
+                    <div class="flex-grow">San Ignacio</div>
+                    <div class="flex-grow">Fundación Loyola</div>
+                    <div class="flex-grow">Virgen de Guadalupe</div>
+                    <div class="flex-grow">Arturo Sosa</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Para que de el mismo espacio a cada caja cuando ocupan mas de lo que ocupa el contenedor-->
+                <h2><a name="flex-shrink">Flex-Shrink</a></h2>
+                <div class="contenedor">
+                    <div class="flex-shrink">San Ignacio</div>
+                    <div class="flex-shrink">Fundación Loyola</div>
+                    <div class="flex-shrink">Virgen de Guadalupe</div>
+                    <div class="flex-shrink">Arturo Sosa</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Cambia el orden en el que aparecen las cajas-->
+                <h2><a name="order">Order</a></h2>
+                <div class="contenedor">
+                    <div class="order">San Ignacio</div>
+                    <div>Fundación Loyola</div>
+                    <div>Virgen de Guadalupe</div>
+                    <div>Arturo Sosa</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Cambia la dirección de como están repartidas las cajas que están dentro del contenedor-->
+                <h2><a name="flex-direction">Flex-Direction</a></h2>
+                <div class="flex-direction">
+                    <div>San Ignacio</div>
+                    <div>Fundación Loyola</div>
+                    <div>Virgen de Guadalupe</div>
+                    <div>Arturo Sosa</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Cuando aplico el wrap hace que las cajas no se salgan de la pantalla y las pone una línea más abajo para que se puedan seguir viendo-->
+                <h2><a name="flex-wrap">Flex-Wrap</a></h2>
+                <div class="flex-wrap">
+                    <div>San Ignacio</div>
+                    <div>Fundación Loyola</div>
+                    <div>Virgen de Guadalupe</div>
+                    <div>Arturo Sosa</div>
+                    <div>Papa Francisco</div>
+                    <div>Pedro Fabro</div>
+                    <div>San Pedro Canisio</div>
+                    <div>San Pedro Claver</div>
+                    <div>San Alberto Hurtado</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Hace que la colocación del wrap sea en columna en vez de en fila, porque por defecto es en fila-->
+                <h2><a name="flex-flow">Flex-Flow</a></h2>
+                <div class="flex-flow">
+                    <div>San Ignacio</div>
+                    <div>Fundación Loyola</div>
+                    <div>Virgen de Guadalupe</div>
+                    <div>Arturo Sosa</div>
+                    <div>Papa Francisco</div>
+                    <div>Pedro Fabro</div>
+                    <div>San Pedro Canisio</div>
+                    <div>San Pedro Claver</div>
+                    <div>San Alberto Hurtado</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Divide el espacio de las cajas segun la propiedad que le pongas-->
+                <h2><a name="justify-content">Justify-Content</a></h2>
+                <div class="justify-content">
+                    <div >San Ignacio</div>
+                    <div>Fundación Loyola</div>
+                    <div>Virgen de Guadalupe</div>
+                    <div>Arturo Sosa</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Aplica una alineacion a una sola caja que está dentro del contenedor-->
+                <h2><a name="align-self">Align-Self</a></h2>
+                <div class="contenedor">
+                    <div>San Ignacio</div>
+                    <div>Fundación Loyola</div>
+                    <div class="align-self">Virgen de Guadalupe</div>
+                    <div>Arturo Sosa</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Alinea todas las cajas respecto a la del contenedor-->
+                <h2><a name="align-items">Align-Items</a></h2>
+                <div class="align-items">
+                    <div>San Ignacio</div>
+                    <div>Fundación Loyola</div>
+                    <div>Virgen de Guadalupe</div>
+                    <div>Arturo Sosa</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Alinea todas las cajas que están dentro del contenedor-->
+                <h2><a name="align-content">Align-Content</a></h2>
+                <div class="align-content">
+                    <div>San Ignacio</div>
+                    <div>Fundación Loyola</div>
+                    <div>Virgen de Guadalupe</div>
+                    <div>Arturo Sosa</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+            <div>
+                <!--Hace un space-between del los pixeles que quieras o el porcentaje que quieras-->
+                <h2><a name="gap">Gap</a></h2>
+                <div class="gap">
+                    <div>San Ignacio</div>
+                    <div>Fundación Loyola</div>
+                    <div>Virgen de Guadalupe</div>
+                    <div>Arturo Sosa</div>
+                </div>
+                <a href="#">Volver</a>
+            </div>
+        </main>
+    </body>
+</html>
