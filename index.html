@@ -28,31 +28,54 @@
             </ul>
         </nav>
         <main>
+            <!-- FLEX-GROW -->
             <div>
-                <!--Para que de el mismo espacio a las cajas cuando no ocupan el contenedor entero-->
                 <h2><a name="flex-grow">Flex-Grow</a></h2>
+                <p>
+                    Las cajas no llegan a ocupar el contenedor entero y sobra espacio, por lo tanto con el Flex-Grow 
+                    reparte el espacio sobrante sobre las cajas. En este caso tiene un flex-grow:1 todas menos "Virgen de Guadalupe" 
+                    que lleva un flex-grow:0, por lo tanto esta ocupa solo el 10% que es lo que tiene de ancho cada caja y el espacio 
+                    que sobra se divide en tres partes iguales y los reparte entre las otras que tienen el flex-grow:1.
+                </p>
                 <div class="contenedor">
                     <div class="flex-grow">San Ignacio</div>
                     <div class="flex-grow">Fundación Loyola</div>
-                    <div class="flex-grow">Virgen de Guadalupe</div>
+                    <div class="flex-grow0">Virgen de Guadalupe</div>
                     <div class="flex-grow">Arturo Sosa</div>
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- FLEX-SHRINK -->
             <div>
-                <!--Para que de el mismo espacio a cada caja cuando ocupan mas de lo que ocupa el contenedor-->
                 <h2><a name="flex-shrink">Flex-Shrink</a></h2>
+                <p>
+                    Las cajas ocupan más tamaño que el contenedor y por lo tanto faltarría espacio, al aplicar el Flex-Shrink
+                    lo que hace es que quita el mismo espacio a cada caja hasta que ocupan el tamaño del contenedor. En este 
+                    caso tiene un flex-shrink:1 y por lo tanto la caja contenedora se divide en 11 espacios iguales uno para cada caja.
+                    Si hubiese 5 cajas pues la contenedora se dividiría en 5 partes iguales, uno para cada una.
+                </p>
                 <div class="contenedor">
                     <div class="flex-shrink">San Ignacio</div>
                     <div class="flex-shrink">Fundación Loyola</div>
                     <div class="flex-shrink">Virgen de Guadalupe</div>
                     <div class="flex-shrink">Arturo Sosa</div>
+                    <div class="flex-shrink">Arturo Sosa</div>
+                    <div class="flex-shrink">Arturo Sosa</div>
+                    <div class="flex-shrink">Arturo Sosa</div>
+                    <div class="flex-shrink">Arturo Sosa</div>
+                    <div class="flex-shrink">Arturo Sosa</div>
+                    <div class="flex-shrink">Arturo Sosa</div>
+                    <div class="flex-shrink">Arturo Sosa</div>
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- ORDER -->
             <div>
-                <!--Cambia el orden en el que aparecen las cajas-->
                 <h2><a name="order">Order</a></h2>
+                <p>
+                    La propiedad Order, cambia el orden de poner las cajas. En este caso le pongo a la caja "San Ignacio" order:1 
+                    y por lo tanto me la muestra la última ya que las otras tienen order:0.
+                </p>
                 <div class="contenedor">
                     <div class="order">San Ignacio</div>
                     <div>Fundación Loyola</div>
@@ -61,9 +84,13 @@
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- FLEX-DIRECTION -->
             <div>
-                <!--Cambia la dirección de como están repartidas las cajas que están dentro del contenedor-->
                 <h2><a name="flex-direction">Flex-Direction</a></h2>
+                <p>
+                    Cambia la dirrección de como están repartidas las cajas que están dentro del contenedor. En este caso le 
+                    pongo un flex-direction: column y por lo tanto me las muestra en columna en vez de en fila.
+                </p>
                 <div class="flex-direction">
                     <div>San Ignacio</div>
                     <div>Fundación Loyola</div>
@@ -72,9 +99,14 @@
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- FLEX-WRAP -->
             <div>
-                <!--Cuando aplico el wrap hace que las cajas no se salgan de la pantalla y las pone una línea más abajo para que se puedan seguir viendo-->
                 <h2><a name="flex-wrap">Flex-Wrap</a></h2>
+                <p>
+                    Cuando aplico el Flex-Wrap hace que las cajas no se salgan de la pantalla y las sitúa una línea más abajo 
+                    para que se puedan seguir viendo. Para ver este efecto las cajas deben ocupar más que el tamaño de la caja 
+                    contenedora.
+                </p>
                 <div class="flex-wrap">
                     <div>San Ignacio</div>
                     <div>Fundación Loyola</div>
@@ -88,9 +120,13 @@
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- FLEX-FLOW -->
             <div>
-                <!--Hace que la colocación del wrap sea en columna en vez de en fila, porque por defecto es en fila-->
                 <h2><a name="flex-flow">Flex-Flow</a></h2>
+                <p>
+                    El flex-flow:colum grap es la propiedad de este, hace que la colocación del wrap sea en columna en vez de 
+                    en fila, porque por defecto es en fila.
+                </p>
                 <div class="flex-flow">
                     <div>San Ignacio</div>
                     <div>Fundación Loyola</div>
@@ -104,9 +140,13 @@
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- JUSTIFY-CONTENT -->
             <div>
-                <!--Divide el espacio de las cajas segun la propiedad que le pongas-->
                 <h2><a name="justify-content">Justify-Content</a></h2>
+                <p>
+                    Divide el espacio de las cajas según la propiedad que le pongas. En este caso le he puesto un space-between 
+                    que hace que deje el mismo espacio entre las cajas.
+                </p>
                 <div class="justify-content">
                     <div >San Ignacio</div>
                     <div>Fundación Loyola</div>
@@ -115,10 +155,15 @@
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- ALIGN-SELF -->
             <div>
-                <!--Aplica una alineacion a una sola caja que está dentro del contenedor-->
                 <h2><a name="align-self">Align-Self</a></h2>
-                <div class="contenedor">
+                <p>
+                    Aplica una alineación a una de las cajas que está dentro del contenedor. En este caso a "Virgen de Guadalupe" 
+                    le he puesto un align-self:flex-end y debe posicionarlas abajo del contenedor, por eso sale por debajo de las 
+                    otras.
+                </p>
+                <div id="align-self">
                     <div>San Ignacio</div>
                     <div>Fundación Loyola</div>
                     <div class="align-self">Virgen de Guadalupe</div>
@@ -126,9 +171,14 @@
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- ALIGN-ITEMS -->
             <div>
-                <!--Alinea todas las cajas respecto a la del contenedor-->
                 <h2><a name="align-items">Align-Items</a></h2>
+                <p>
+                    Alinea todas las cajas respecto a la del contenedor. En este caso tiene un align-items: center y como el contenedor 
+                    no es más grande ni nada pues están en el centro y parece que no hace nada. Pero si el contenedor fuera más grande 
+                    se vería con mayor calidad.
+                </p>
                 <div class="align-items">
                     <div>San Ignacio</div>
                     <div>Fundación Loyola</div>
@@ -137,9 +187,12 @@
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- ALIGN-CONTENT -->
             <div>
-                <!--Alinea todas las cajas que están dentro del contenedor-->
                 <h2><a name="align-content">Align-Content</a></h2>
+                <p>
+                    Alinea todas las cajas que están dentro del contenedor
+                </p>
                 <div class="align-content">
                     <div>San Ignacio</div>
                     <div>Fundación Loyola</div>
@@ -148,9 +201,13 @@
                 </div>
                 <a href="#">Volver</a>
             </div>
+            <!-- GAP -->
             <div>
-                <!--Hace un space-between del los pixeles que quieras o el porcentaje que quieras-->
                 <h2><a name="gap">Gap</a></h2>
+                <p>
+                    Hace un space-between, osea deja el mismo espacio entre las cajas, de los píxeles que quieras o del 
+                    porcentaje que quieras. En este caso le he puesto un gap: 10px y deja 10 px de espacio entre las cajas.
+                </p>
                 <div class="gap">
                     <div>San Ignacio</div>
                     <div>Fundación Loyola</div>

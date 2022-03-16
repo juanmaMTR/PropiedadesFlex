@@ -27,28 +27,40 @@ main div div div{
 h2{
     margin-top: 3%;
 }
+/* Aplico el flex a todos los contenedores */
 .contenedor{
     display: flex;
 }
+/* Dividimos las cajas en partes iguales */
 .flex-grow{
     width: 10%;
-    flex-grow: 1;
+    flex-grow: 1; 
 }
+/* No divido las cajas y se queda como está */
+.flex-grow0{
+    width: 10%;
+    flex-grow: 0;
+}
+/* Dividimos el espacio del contenedor en partes iguales, este se utiliza cuando las cajas se salen del contenedor */
 .flex-shrink{
     width: 30%;
     flex-shrink: 1;
 }
+/* Cambio el orden de las cajas */
 .order{
     order: 1; /*Lo coloca al final porque los demás por defecto tienen order 0*/
 }
+/* Cambio la direccion de las cajas en columnas */
 .flex-direction{
     display: flex;
     flex-direction: column;
 }
+/* Las cajas no se salen de la pantalla y se sitúan una línea por debajo */
 .flex-wrap{
     display: flex;
     flex-wrap: wrap;
 }
+/* Hace que la colocación del wrap sea en columna */
 .flex-flow{
     display: flex;
     flex-flow: column wrap;
@@ -56,13 +68,20 @@ h2{
 .justify-content div{
     width: 20%;
 }
+/* Deja el mismo espacio entre las cajas */
 .justify-content{
     display: flex;
-    justify-content: space-between; /*Con esta propiedad deja el mismo espacio entre las cajas*/
+    justify-content: space-between;
 }
+#align-self{
+    display: flex;
+    height: 100px;
+}
+/* Sitúo una caja al borde de abajo del contenedor */
 .align-self{
     align-self: flex-end;
 }
+/* Alinea las cajas respecto al centro del contenedor */
 .align-items{
     display: flex;
     align-items: center;
@@ -70,10 +89,12 @@ h2{
 .align-content div{
     width: 50%;
 }
+/* Alinea las cajas que esán dentro del contenedor */
 .align-content{
     display: flex;
     align-content: space-between;
 }
+/* Deja el mismo espacio entre las cajas según la medida que le pongas */
 .gap{
     display: flex;
     gap: 10px;
